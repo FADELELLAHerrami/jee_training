@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" errorPage="Erreur.jsp"%>
- <%@ page import ="java.util.Date" %>
- <%@ page import ="Modele.Personne" %>
+    pageEncoding="UTF-8" isErrorPage="true"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<% int x = 3/0; %>
+	Error 
+	<%=exception.getMessage() %>
 </body>
 </html>
