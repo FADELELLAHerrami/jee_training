@@ -1,0 +1,23 @@
+Scope e jee
+
+En JEE (Java Enterprise Edition), le scope (portée) fait référence à la durée de vie et à la visibilité 
+d'un objet dans une application web. Il existe quatre portées (scopes) principales en JEE : application scope,
+ session scope, request scope et page scope.
+
+Application Scope : Les objets stockés dans la portée d'application sont disponibles pour l'ensemble de l'application.
+ Ils sont créés une seule fois lorsque l'application démarre et restent en mémoire jusqu'à ce que l'application soit arrêtée.
+  Cette portée est souvent utilisée pour stocker des informations globales telles que les paramètres de configuration, les listes de pays,
+   les listes de catégories, etc.
+
+Session Scope : Les objets stockés dans la portée de session sont accessibles pour une session utilisateur spécifique. Ils sont créés
+ lorsque la session utilisateur commence (par exemple, lorsque l'utilisateur se connecte à l'application) et sont détruits lorsque la 
+ session se termine (par exemple, lorsque l'utilisateur se déconnecte ou lorsque la session expire). Cette portée est souvent utilisée 
+ pour stocker des informations utilisateur telles que le panier d'achat, les préférences utilisateur, etc.
+
+Request Scope : Les objets stockés dans la portée de requête sont accessibles pour une seule requête HTTP. Ils sont créés lorsque la 
+requête est reçue et sont détruits lorsque la réponse est envoyée. Cette portée est souvent utilisée pour stocker des informations 
+temporaires nécessaires pour le traitement d'une requête spécifique, telles que les paramètres de formulaire, les messages d'erreur, etc.
+
+Page Scope : Les objets stockés dans la portée de page sont accessibles uniquement dans la page JSP où ils ont été définis. 
+Ils sont créés lorsque la page est générée et sont détruits lorsque la réponse est envoyée. Cette portée est souvent utilisée pour stocker 
+des informations temporaires nécessaires pour la génération de la page, telles que les variables locales, les résultats de requêtes SQL, etc.

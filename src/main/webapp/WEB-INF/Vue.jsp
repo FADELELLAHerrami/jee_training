@@ -7,8 +7,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<% int x = 3/0; %>
+	<p class="first">Hi errami Fadel Ellah</p>
 </body>
 </html>
