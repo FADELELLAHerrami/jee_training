@@ -10,9 +10,10 @@
 </head>
 <body>
 	<p>Hello from Essaouira</p>
-	<%
-		Personne perso = (Personne) request.getAttribute("Personne");
-		out.println("Bonjour votre prénom :"+perso.getPrenom()+" ,votre nom est "+ perso.getNom()+" ,votre numéro est "+perso.getNum());
-	%> 
+	
+	<h4>J'aime le ${ sport.get(0) } et le ${ sport[3] }.
+		Je deteste le ${ sport['1'] } et le ${ sport["3"] }.
+	</h4>
+	
 </body>
 </html>
