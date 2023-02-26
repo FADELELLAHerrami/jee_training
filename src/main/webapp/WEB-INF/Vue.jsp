@@ -2,6 +2,8 @@
     pageEncoding="UTF-8" errorPage="Erreur.jsp"%>
  <%@ page import ="java.util.Date" %>
  <%@ page import ="Modele.Personne" %>
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
+ 
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,5 +13,6 @@
 </head>
 <body>
 	<p class="first">Hi errami Fadel Ellah</p>
+	<c:out value="Hello world" />
 </body>
 </html>
