@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" errorPage="Erreur.jsp"%>
- <%@ page import ="java.util.Date" %>
- <%@ page import ="Modele.Personne" %>
+<%@ page import ="java.util.Date" %>
+<%@ page import ="Modele.Personne" %>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
  
 <!DOCTYPE html>
