@@ -70,7 +70,7 @@ public class DaoImpl implements DaoPaersonne<Personne>{
 		p.setNum(id);
 		if(c != null) {
 			try {
-				PreparedStatement ps = c.prepareStatement("update personne set nom=?,prenom=?,where id =?");
+				PreparedStatement ps = c.prepareStatement("update personne set nom=?, prenom=? where num =?");
 				ps.setString(1,nom);
 				ps.setString(2,prenom);
 				ps.setInt(3,id);
@@ -83,8 +83,8 @@ public class DaoImpl implements DaoPaersonne<Personne>{
 		}
 		return p;
 	}
-	
 
+	
 	
 	
 }
