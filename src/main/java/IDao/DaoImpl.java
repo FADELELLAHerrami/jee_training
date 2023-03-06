@@ -84,6 +84,20 @@ public class DaoImpl implements DaoPaersonne<Personne>{
 		return p;
 	}
 
+	@Override
+	public Boolean removePersonne(int id) {
+		Connection c = (Connection) MyConnection.getConnection();
+		try {
+			PreparedStatement pr = c.prepareStatement("DELETE from personne where id= ?");
+			pr.setInt(1, id);
+			pr.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return true;
+	}
+
 	
 	
 	

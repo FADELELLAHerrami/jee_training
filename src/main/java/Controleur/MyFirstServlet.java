@@ -64,6 +64,7 @@ public class MyFirstServlet extends HttpServlet{
 			
 			req.setAttribute("personne", insertedPersonne);
 			req.getRequestDispatcher("/WEB-INF/confirmation.jsp").forward(req, res);
+			
 		}
 
 
